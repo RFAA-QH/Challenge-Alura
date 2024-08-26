@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <title> Challenge Encriptador de Texto</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <p class="head">באלוהים שאנו סומכים עליו</p>
+    </header>
+
+    <main class="presentacion">
+        <div class="caja-encriptar">
+            <div class="respuesta">
+                <input class="input-text" id="inputText" placeholder="Ingrese el texto aquí">
+            </div>
+            <div class="botones">
+                <button class="boton" onclick="encriptar()">Encriptar</button>
+                <button class="boton" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        
+        <div class="caja-derecha">
+            <div class="caja-texto-encriptado">
+                <img class="imagen" src="./assets/imagen challenge.png" alt="imagen lego">
+                <input class="respuesta-encriptada" id="outputText" placeholder="Resultado" readonly>
+            </div>
+            <button class="copiar-texto" id="copyButton" onclick="copiarTexto()">Copiar texto</button>
+        </div>
+    </main>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
